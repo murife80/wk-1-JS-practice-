@@ -15,12 +15,7 @@ function studentGrade (Marks) {
 
 
     else if (Marks >= 40 && Marks <= 49) {
-        return "D-";
-    
-    }
-
-
-    else if (Marks < 40 ) {
-        return "E";
-    }
+        return "D"
 }
+ 
+

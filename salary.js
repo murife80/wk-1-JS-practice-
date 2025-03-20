@@ -9,12 +9,12 @@ function calculateNetSalary(basicSalary, benefits) {
     //GrossSalary calculation by basic salary and benefits addition
     const grossSalary = basicSalary + benefits;
 
-    const tax = grossSalary * taxRate; //tax deduction calculation from grossalary
-    const nhif = grossSalary * nhifRate;//NHIF tax calculation from grossSalry
-    const nssf = grossSalary * nssfRate;//NSSF tax decduction calculation from grosssalary
+    const tax = grossSalary * taxRate; 
+    const nhif = grossSalary * nhifRate;
+        const nssf = grossSalary * nssfRate;
   
 
-    //Net salary calculation
+    
     const netSalary = grossSalary - (tax + nhif + nssf);
   
     return {
@@ -23,5 +23,7 @@ function calculateNetSalary(basicSalary, benefits) {
       nhif,
       nssf,
       netSalary
-    };
-  }
+    };
+  }
+  
+ 
